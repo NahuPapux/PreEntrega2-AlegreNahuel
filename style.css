@@ -1,0 +1,99 @@
+.container {
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+#nombre, #edad {
+    text-align: center;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(assets/c84fb7f137df383285f295089a3bfd7e.jpg);
+    font-family: 'PT Sans';
+}
+
+form {
+    display: grid;
+    grid-template-areas: "input1 input2" "button button";
+    column-gap: 8px;
+    width: 50%;
+}
+
+form button, form input {
+    height: 2.3rem;
+    border: 0;
+    padding: 0 1rem;
+    border-radius: 1.2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+form input#producto {grid-area: input1}
+form input#precio {grid-area: input2}
+form button {grid-area: button}
+
+form input:focus, form input:active {
+    outline: none;
+}
+
+form button {
+    background: rgb(6, 173, 6);
+    color: white;
+    transition: background 200ms linear;
+}
+
+form button:hover {
+    cursor: pointer;
+    background: rgb(6, 188, 6);
+}
+
+form button:active {
+    background: rgb(7, 219, 7);
+}
+
+h1 {
+    text-align: center;
+    font-size: 3;
+    background-color: rgba(0, 0, 0, 0.377);
+    border-radius: 100px;
+    width: 22%;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    margin-top: 1rem;
+}
+
+.container2 {
+    /* background-color: rgba(0, 0, 0, 0.267); */
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+table {
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.555);
+}
+
+table thead tr th {
+    width: 50%;
+    font-size: 1.2rem;
+}
+
+table tbody {
+    font-size: 1.2rem;
+}
